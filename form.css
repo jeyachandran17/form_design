@@ -1,65 +1,97 @@
-td,th{
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#form-submit{
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    border: 3px solid black;
+    gap: 10px;
 }
 
-body{
-    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/newscms/2022_35/1902756/20220829-sj-labor_day_-2x1-1017.jpg");
-    background-size:1560px 750px;
+.name-container,
+.address-container,
+.pincode-container,
+.gender-container,
+.state-container,
+.country-container,
+.food-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
 }
 
-form,table{
-    margin-top: 30px;
-    margin-left: 30px;
+.input-name-container{
+    display: flex;
+    gap: 10px;
 }
 
-table{
-    width:1200px;
-    height: 20px;
-    color:black;
-    text-shadow: 0 0 10px cyan;
-    font-weight: bold;
-    
+.first-name{
+    display: flex;
+    width: 290px;
 }
 
-.details1{
-    width: 250px;
-    height: 20px;
-    margin-top: 10px;
-    border-radius: 3px;
+.last-name{
+    display: flex;
+    width: 290px;
 }
-.details2{
-    width: 510px;
-    height: 20px;
-    margin-top:10px ;
-    border-radius: 3px;
+
+.input-container{
+    display: flex;
+    flex-direction: column;
 }
-.txt{
-    font-weight: bold;
-    color: black;
-    text-shadow: 0 0 3px cyan;
+
+.first-name,
+.last-name,
+.input-details{
+    padding: 5px;
 }
-.food{
-    margin-top: 10px;
-    border-radius: 3px;
-    height: 25px;
-    width: 100px;
+
+.first-name:hover,
+.last-name:hover,
+.input-details:hover{
+    outline: none;
+    border-color: dodgerblue;
 }
-.submit{
-    margin-top: 10px;
-    border-radius: 3px;
-    border-color: aqua;
+
+.first-name:focus,
+.last-name:focus,
+.input-details:focus{
+    outline: none;
+    border-color:greenyellow;
 }
-.submit:hover{
-    background-color: aqua;
-    color: black;
+
+select{
+    padding: 5px;
+}
+
+.submit {
+    padding: 5px;
     border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 5px gray;
+    background-color: white;
 }
 
-.details1:hover,.details2:hover, .food:hover{
-    border: 3px solid aqua;
+.submit:hover {
+    background-color: whitesmoke;
 }
 
-.details1:focus,.details2:focus,.food:focus,.submit:focus{
-    border: 5px solid greenyellow;
+table,
+th,
+tr,
+td {
+    padding: 10px;
+    border: 2px solid gray;
+    border-collapse: collapse;
 }

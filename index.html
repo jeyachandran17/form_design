@@ -8,48 +8,111 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <div class="form">
-        <form action="" id="form-submit">
-            <label for="" class="txt">Name</label><br>
-            <input type="text" placeholder="First name" class="details1">
-            <input type="text" placeholder="Last name" class="details1"><br>
-            <label for="" class="txt">Address</label><br>
-            <input type="text" placeholder="Address" class="details2"><br>
-            <label for="" class="txt">Pincode</label><br>
-            <input type="text" placeholder="Pincode" class="details2"><br>
-            <label for="" class="txt">Gender</label><br>
-            <input type="text" placeholder="Gender" class="details2"><br>
-            <label for="" class="txt">State</label><br>
-            <input type="text" placeholder="State" class="details2"><br>
-            <label for="" class="txt">Country</label><br>
-            <input type="text" placeholder="Country" class="details2"><br>
-            <label for="" class="txt">Choise the food</label><br>
-            <select id="food" class="food">
-                <option value="Hot dog">Hot dog</option>
-                <option value="Pizza">Pizza</option>
-                <option value="Salad">Salad</option>
-                <option value="Sandwich">Sandwich</option>
-                <option value="Burger">Burger</option>
-              </select><br>
-            <button type="submit" class="submit">Submit</button>
-        </form>
-        <br>
-        <hr>
-        <table>
-            <thead>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Address</th>
-                <th>Pincode</th>
-                <th>Gender</th>
-                <th>State</th>
-                <th>Country</th>
-                <th>Food</th>
-            </thead>
-            <tbody>
+    <div class="container">
+        <div class="form-container">
+            <form action="" id="form-submit">
+                <!-- Name -->
+                <div class="name-container">
+                    <div class="label-name">
+                        <label for="name" class="txt">Name</label>
+                    </div>
+                    <div class="input-name-container">
+                        <div class="first-name-container">
+                            <input type="text" placeholder="First name" id="name" class="first-name">
+                        </div>
+                        <div class="last-name-container">
+                            <input type="text" placeholder="Last name" class="last-name">
+                        </div>
+                    </div>
+                </div>
 
-            </tbody>
-        </table>
+                <!-- Address -->
+                <div class="address-container">
+                    <div class="label-name">
+                        <label for="address" class="txt">Address</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Address" id="address" class="input-details">
+                    </div>
+                </div>
+
+                <!-- Pincode -->
+                <div class="pincode-container">
+                    <div class="label-name">
+                        <label for="pincode" class="txt">Pincode</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Pincode" id="pincode" class="input-details">        
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="gender-container">
+                    <div class="label-name">
+                        <label for="gender" class="txt">Gender</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Gender" id="gender" class="input-details">
+                    </div>
+                </div>
+
+                <!-- State -->
+                <div class="state-container">
+                    <div class="label-name">
+                        <label for="state" class="txt">State</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="State" id="state" class="input-details">
+                    </div>
+                </div>
+
+                <!-- Country -->
+                <div class="country-container">
+                    <div class="label-name">
+                        <label for="country" class="txt">Country</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Country" id="country" class="input-details">
+                    </div>
+                </div>
+
+                <!-- food -->
+                <div class="food-container">
+                    <div class="label-name">
+                        <label for="food" class="txt">Choise the food</label>     
+                    </div>
+                    <div class="select-food">
+                        <select id="food" class="food">
+                            <option class="option" disabled selected>Empty</option>
+                            <option class="option" value="Hot dog">Hot dog</option>
+                            <option class="option" value="Pizza">Pizza</option>
+                            <option class="option" value="Salad">Salad</option>
+                            <option class="option" value="Sandwich">Sandwich</option>
+                            <option class="option" value="Burger">Burger</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sumbit-container">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+            <hr>
+            <table>
+                <thead>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Food</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
