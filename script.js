@@ -27,19 +27,18 @@ form_submit.addEventListener('submit', (e) => {
     var innerText_values = [first_name,last_name,address,pincode,gender,state,country,food]
     var details = [FULLNAME, ADDRESS, PINCODE, GENDER, STATE, COUNTRY, FOOD]
     
-    // if(first_name!=''&&last_name!=''&&address!=''&&city!=''){
+    if (FIRST_NAME != '' && LASTNAME != '' && ADDRESS != '' && PINCODE != '' && GENDER != '' && STATE != '' && COUNTRY != '' && FOOD != '' && FOOD != 'Empty') {
+        var creating_tr = document.createElement('tr')
+        for(var i=0;i<details.length;i++){
+            var creating_td = document.createElement('td')
+            creating_td.innerText = details[i]
+            creating_tr.append(creating_td)
+        }
 
-    // }
-    
-    var creating_tr = document.createElement('tr')
-    for(var i=0;i<details.length;i++){
-        var creating_td = document.createElement('td')
-        creating_td.innerText = details[i]
-        creating_tr.append(creating_td)
-    }
-
-    document.querySelector('tbody').append(creating_tr)
-    for(var i of innerText_values){
-        i.value='';
+        document.querySelector('tbody').append(creating_tr)
+        for(var i of innerText_values){
+            i.value='';
+        }
+        food.value = "Empty"
     }
 })
